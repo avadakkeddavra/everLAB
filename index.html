@@ -6,15 +6,20 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="js/slick/slick-theme.css">
 	<link rel="stylesheet" href="js/slick/slick.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway|Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.css">
 </head>
 <body>
+
 		<div class="menu-row row">
 			<div class="container">
+				<div class="col-xs-1 menu_btn hidden-md hidden-lg">
+					<button id="menu_show"><i class="fa fa-bars"></i></button>
+				</div>
 				<div class="col-xs-2 logo"><span>everlab</span></div>
 				<div class="col-xs-8 menu">
-					<ul class="list-inline">
+					<ul class="list-inline hidden-sm hidden-xs">
 						<li><a href="#">Home</a></li>
 						<li><a href="#">О нас</a></li>
 						<li><a href="#">Портфолио</a></li>
@@ -23,14 +28,24 @@
 					</ul>
 				</div>
 				<div class="col-xs-2 head_social">
-					<ul class="list-inline">
+					<ul class="list-inline hidden-sm hidden-xs">
 						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 						<li><a href="#"><i class="fa fa-vk"></i></a></li>
 					</ul>
 				</div>
+
 			</div>
+				<div class="mobile_menu">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">О нас</a></li>
+			<li><a href="#">Портфолио</a></li>
+			<li><a href="#">отзывы</a></li>
+			<li><a href="#">контакты</a></li>
+		</ul>
+	</div>
 		</div>
 	<header class="row">
 		<div class="container">
@@ -90,20 +105,72 @@
 			</div>
 		</div>
 	</section>		
-	
+	<section class='portfolio'>
+	<h2 class="h-section">Портфолио</h2>
+	<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, nihil!</p>
+		<div class="row">
+			<article class="col-md-4 col-sm-6 project" style="background: url('img/item-a10.jpeg') center/cover;">
+				<div class="bg-overlay"></div>
+				<div class="desc">
+					<h3 class="title">title</h3>
+					<h4 class="company">BVJ Company</h4>
+				</div>
+			</article>
+			
+			<article class="col-md-4 col-sm-6 project" style="background: url('img/item-a11.jpeg') center/cover;">
+				<div class="bg-overlay"></div>
+				<div class="desc">
+					<h3 class="title">title</h3>
+					<h4 class="company">BVJ Company</h4>
+				</div>
+			</article>
+			
+			<article class="col-md-4 col-sm-6 project" style="background: url('img/item-a10.jpeg') center/cover;">
+				<div class="bg-overlay"></div>
+				<div class="desc">
+					<h3 class="title">title</h3>
+					<h4 class="company">BVJ Company</h4>
+				</div>
+			</article>
+						<article class="col-md-4 col-sm-6 project" style="background: url('img/item-a11.jpeg') center/cover;">
+				<div class="bg-overlay"></div>
+				<div class="desc">
+					<h3 class="title">title</h3>
+					<h4 class="company">BVJ Company</h4>
+				</div>
+			</article>
+			
+			<article class="col-md-4 col-sm-6 project" style="background: url('img/item-a10.jpeg') center/cover;">
+				<div class="bg-overlay"></div>
+				<div class="desc">
+					<h3 class="title">title</h3>
+					<h4 class="company">BVJ Company</h4>
+				</div>
+			</article>
+			
+			<article class="col-md-4 col-sm-6 project" style="background: url('img/item-a11.jpeg') center/cover;">
+				<div class="bg-overlay"></div>
+				<div class="desc">
+					<h3 class="title">title</h3>
+					<h4 class="company">BVJ Company</h4>
+				</div>
+			</article>
+			
+		</div>
+	</section>
 	<section class="some_info">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-sm-4">
 					<div class="info_card">
 						<h3 class="h-desc">легкость  Сотрудничества</h3>
 						<p>Мы умеем понимать желания любого клиента, и с лёгкостью помогаем каждому добиваться поставленных целей. Мы ценим каждого и заботимся о взаимовыгодном сотрудничестве!</p>
 					</div>
 				</div>
-				<div class="col-md-4 img">
+				<div class="col-sm-4 img">
 					<img src="img/dancer.jpg" alt="" class="img-responsive">
 				</div>
-				<div class="col-md-4">
+				<div class="col-sm-4">
 					<div class="info_card">
 						<h3 class="h-desc">фундаментальный подход</h3>
 						<p>Рекламное бюро «Эверест» выстраивает долгосрочные, крепкие и надежные отношения со своими клиентами и партнёрами. Профессиональные менеджеры компании не просто создают медиа-планы, а являются бизнес-консультантами и всей душой радуются успехам своих заказчиков.</p>
@@ -214,7 +281,7 @@
 					<div class="article_order"><a href="#" class="btn-template">Заказать</a></div>
 				</article>
 			<article class="col-md-4 centered">
-					<div class="header_article">Корпоративный сайт</div>
+					<div class="header_article">Landing page</div>
 					<div class="article_body">
 					<div class="price">
 						<span>5000</span>
@@ -254,7 +321,7 @@
 					<div class="article_order"><a href="#" class="btn-template">Заказать</a></div>
 			</article>
 			<article class="col-md-4 no-padding">
-					<div class="header_article">Корпоративный сайт</div>
+					<div class="header_article">Интернет магазин</div>
 					<div class="article_body">
 					<div class="price">
 						<span>5000</span>
@@ -296,6 +363,11 @@
 			</div>
 		</div>
 	</section>
+	<div class="copyright">
+		<div class="container">
+			<p>Copyright © 2017 by Everlab</p>
+		</div>
+	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/slick/slick.js"></script>
 <script src="js/js.js"></script>
